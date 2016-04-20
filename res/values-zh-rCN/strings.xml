@@ -28,11 +28,11 @@
   <string name="weather_5">雨夹雪</string>
   <string name="weather_6">混合雨和冻雨</string>
   <string name="weather_7">混合雪和冻雨</string>
-  <string name="weather_8">冻毛毛雨</string>
-  <string name="weather_9">毛毛雨</string>
+  <string name="weather_8">冻雨</string>
+  <string name="weather_9">小雨</string>
   <string name="weather_10">冰雨</string>
-  <string name="weather_11">阵雨</string>
-  <string name="weather_12">阵雨</string>
+  <string name="weather_11">中雨</string>
+  <string name="weather_12">大雨</string>
   <string name="weather_13">飘雪</string>
   <string name="weather_14">小雪</string>
   <string name="weather_15">吹雪</string>
@@ -61,7 +61,7 @@
   <string name="weather_38">局部雷雨</string>
   <string name="weather_39">局部雷雨</string>
   <string name="weather_40">零星阵雨</string>
-  <string name="weather_41">大雪</string>
+  <string name="weather_41">中雪</string>
   <string name="weather_42">零星阵雪</string>
   <string name="weather_43">大雪</string>
   <string name="weather_44">晴间多云</string>
@@ -106,6 +106,7 @@
   <string name="weather_enable">显示天气</string>
   <string name="weather_source_title">天气来源</string>
   <string name="weather_source_yahoo">雅虎天气</string>
+  <string name="weather_source_weathercn">中国天气网</string>
   <string name="weather_use_custom_location">使用自定义的位置</string>
   <string name="weather_geolocated">使用网络定位</string>
   <string name="weather_custom_location_dialog_title">输入位置</string>

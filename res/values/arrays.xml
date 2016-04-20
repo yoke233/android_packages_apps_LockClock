@@ -109,11 +109,13 @@
     <string-array name="weather_source_entries" translatable="false">
         <item>@string/weather_source_yahoo</item>
         <item>@string/weather_source_openweathermap</item>
+        <item>@string/weather_source_weathercn</item>
     </string-array>
 
     <string-array name="weather_source_values" translatable="false">
         <item>yahoo</item>
         <item>openweathermap</item>
+        <item>weathercn</item>
     </string-array>
 
 </resources>

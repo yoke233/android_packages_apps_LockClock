@@ -24,7 +24,13 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.util.EntityUtils;
 
+import java.io.BufferedInputStream;
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
 
 public class HttpRetriever {
     private static final String TAG = "HttpRetriever";
@@ -39,6 +45,26 @@ public class HttpRetriever {
             }
         } catch (IOException e) {
             Log.e(TAG, "Couldn't retrieve data from url " + url, e);
+        }
+        return null;
+    }
+
+    public static String retrieve2(String urlStr) {
+        try {
+            URL url = new URL(urlStr);
+            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+            conn.connect();
+
+            InputStream is = conn.getInputStream();
+            BufferedReader streamReader = new BufferedReader(new InputStreamReader(is, "UTF-8"));
+            StringBuilder responseStrBuilder = new StringBuilder();
+
+            String inputStr;
+            while ((inputStr = streamReader.readLine()) != null)
+                responseStrBuilder.append(inputStr);
+            return responseStrBuilder.toString();
+        } catch (IOException e) {
+            Log.e(TAG, "Couldn't retrieve data from url " + urlStr, e);
         }
         return null;
     }

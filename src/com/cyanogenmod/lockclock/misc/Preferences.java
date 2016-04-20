@@ -21,6 +21,7 @@ import android.content.SharedPreferences;
 import android.graphics.Color;
 
 import com.cyanogenmod.lockclock.weather.OpenWeatherMapProvider;
+import com.cyanogenmod.lockclock.weather.WeatherCnProvider;
 import com.cyanogenmod.lockclock.weather.WeatherInfo;
 import com.cyanogenmod.lockclock.weather.WeatherProvider;
 import com.cyanogenmod.lockclock.weather.YahooWeatherProvider;
@@ -203,6 +204,8 @@ public class Preferences {
         String name = getPrefs(context).getString(Constants.WEATHER_SOURCE, "yahoo");
         if (name.equals("openweathermap")) {
             return new OpenWeatherMapProvider(context);
+        }if (name.equals("weathercn")) {
+            return new WeatherCnProvider(context);
         }
         return new YahooWeatherProvider(context);
     }

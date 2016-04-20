@@ -39,8 +39,6 @@ import com.cyanogenmod.lockclock.ClockWidgetProvider;
 import com.cyanogenmod.lockclock.misc.Constants;
 import com.cyanogenmod.lockclock.misc.Preferences;
 import com.cyanogenmod.lockclock.misc.WidgetUtils;
-import com.google.android.gms.common.ConnectionResult;
-import com.google.android.gms.common.GooglePlayServicesUtil;
 
 import java.util.Date;
 
@@ -202,9 +200,7 @@ public class WeatherUpdateService extends Service {
         }
 
         private boolean isGooglePlayServicesAvailable() {
-            int result = GooglePlayServicesUtil.isGooglePlayServicesAvailable(mContext);
-            return result == ConnectionResult.SUCCESS
-                    || result == ConnectionResult.SERVICE_VERSION_UPDATE_REQUIRED;
+            return false;
         }
 
         @Override

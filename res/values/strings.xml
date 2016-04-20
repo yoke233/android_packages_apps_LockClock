@@ -147,6 +147,7 @@
     <string name="weather_source_title">Weather source</string>
     <string name="weather_source_yahoo">Yahoo! Weather</string>
     <string name="weather_source_openweathermap" translatable="false">OpenWeatherMap</string>
+    <string name="weather_source_weathercn">WeatherCN</string>
     <string name="weather_use_custom_location">Use custom location</string>
     <string name="weather_geolocated">Geolocated using network</string>
     <string name="weather_custom_location_dialog_title">Enter location</string>
